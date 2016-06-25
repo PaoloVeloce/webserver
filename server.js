@@ -14,6 +14,6 @@ app.get('/about', middleware.requireAuthentication, function(req, res) {
 // takes the the contents of public directory to server
 app.use(express.static(__dirname +'/public'));
 // console.log(__dirname);
-app.listen(3000, function () {
+app.listen(PORT, function () {
 	console.log('Server running at port ' + PORT + ' !');
 });
